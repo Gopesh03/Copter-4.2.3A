@@ -1,7 +1,7 @@
 #include "Copter.h"
 
 // Code to detect a crash main ArduCopter code
-#define CRASH_CHECK_TRIGGER_SEC         2       // 2 seconds inverted indicates a crash
+#define CRASH_CHECK_TRIGGER_SEC         3       // 3 seconds inverted indicates a crash. Change to 3 second from 2 second by GOPESH KRISHNA YADAV
 #define CRASH_CHECK_ANGLE_DEVIATION_DEG 30.0f   // 30 degrees beyond target angle is signal we are out of control
 #define CRASH_CHECK_ANGLE_MIN_DEG       15.0f   // vehicle must be leaning at least 15deg to trigger crash check
 #define CRASH_CHECK_SPEED_MAX           10.0f   // vehicle must be moving at less than 10m/s to trigger crash check
