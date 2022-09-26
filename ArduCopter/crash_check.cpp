@@ -1,11 +1,11 @@
 #include "Copter.h"
 
 // Code to detect a crash main ArduCopter code
-#define CRASH_CHECK_TRIGGER_SEC         3       // 3 seconds inverted indicates a crash. Change to 3 second from 2 second by GOPESH KRISHNA YADAV
-#define CRASH_CHECK_ANGLE_DEVIATION_DEG 30.0f   // 30 degrees beyond target angle is signal we are out of control
-#define CRASH_CHECK_ANGLE_MIN_DEG       15.0f   // vehicle must be leaning at least 15deg to trigger crash check
-#define CRASH_CHECK_SPEED_MAX           10.0f   // vehicle must be moving at less than 10m/s to trigger crash check
-#define CRASH_CHECK_ACCEL_MAX           3.0f    // vehicle must be accelerating less than 3m/s/s to be considered crashed
+#define CRASH_CHECK_TRIGGER_SEC         3       // 3 seconds inverted indicates a crash. Changed to 3 second from 2 second by GOPESH KRISHNA YADAV
+#define CRASH_CHECK_ANGLE_DEVIATION_DEG 20.0f   // 20 degrees beyond target angle is signal we are out of control. Changed to 20 degree from 30 degree by GOPESH KRISHNA YADAV
+#define CRASH_CHECK_ANGLE_MIN_DEG       10.0f   // vehicle must be leaning at least 10deg to trigger crash check. Changed to 10deg from 15deg by GOPESH KRISHNA YADAV
+#define CRASH_CHECK_SPEED_MAX           15.0f   // vehicle must be moving at less than 15m/s to trigger crash check. Changed to 15m/s from 10m/s by GOPESH KRISHNA YADAV
+#define CRASH_CHECK_ACCEL_MAX           4.0f    // vehicle must be accelerating less than 4m/s/s to be considered crashed. Changed to 4 from 3 by GOPESH KRISHNA YADAV
 
 // Code to detect a thrust loss main ArduCopter code
 #define THRUST_LOSS_CHECK_TRIGGER_SEC         1     // 1 second descent while level and high throttle indicates thrust loss
