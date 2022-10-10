@@ -13,7 +13,7 @@ jobs:
       matrix:
         config: [
             sitl,
-            CubeOrange,
+            Pixhawk4,
         ]
 
     steps:
